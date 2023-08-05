@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className='sm:h-screen'>
-        <div className='flex justify-between items-center py-4 px-4 '>
+        <div className='flex justify-between items-center py-4 px-4 sm:px-2 '>
           <div className='bg-orange-400 rounded-full px-3 py-8 ml-6 '>
             <h1 className='text-white text-lg font-extrabold'>Zoobalo</h1>
           </div>
@@ -23,11 +23,11 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-between">
-          <div className="sm:ml-16 mt-12 sm:w-[55%]">
+          <div className="sm:ml-16 ml-4 mt-12 sm:w-[55%]">
             <div>
-              <h1 className="text-xl text-orange-400 font-medium tracking-widest">OUR PRIORITY, YOURS SAFETY</h1>
-              <h1 className="text-7xl font-extrabold text-orange-400">SAFE FOOD</h1>
-              <h1 className="sm:text-[5rem] font-light text-orange-400 sm:mt-[-1rem] text-[3rem] mt-2">FAST DELIVERY</h1>
+              <h1 className="text-lg sm:text-xl text-orange-400 font-medium tracking-widest">OUR PRIORITY, YOURS SAFETY</h1>
+              <h1 className="text-7xl font-extrabold text-orange-400 mt-1 sm:mt-0">SAFE FOOD</h1>
+              <h1 className="sm:text-[5rem] font-light text-orange-400 sm:mt-[-1rem] text-[2rem] mt-1">FAST DELIVERY</h1>
               <a href="#about">
                 <button className='px-5 py-3 rounded-2xl text-white bg-orange-500 mt-10 font-bold ml-2'>SEE MORE</button>
               </a>
@@ -41,7 +41,7 @@ function App() {
 
       {/* Mid Section  */}
 
-      <div className='flex py-16' id='about'>
+      <div className='flex py-8 sm:py-16' id='about'>
         <div className='sm:w-[50%] hidden sm:flex'>
           <img src={tiffin} alt="tiffin-box" className='bg-contain w-[80%]' />
         </div>
@@ -58,7 +58,7 @@ function App() {
       </div>
 
       {/* Contact Section  */}
-      <div className='bg-[#363636] w-full h-auto px-20 pt-24 pb-2' id='contact'>
+      <div className='bg-[#363636] w-full h-auto px-12 sm:px-20 pt-24 pb-2' id='contact'>
         <div className=' text-white flex flex-col sm:flex-row'>
           <div className='sm:w-[60%] w-[100%]'>
             <h1 className='text-4xl font-bold'>
