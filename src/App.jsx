@@ -11,30 +11,30 @@ function App() {
 
   return (
     <>
-      <div className='h-screen'>
-        <div className='flex justify-between items-center py-4 px-4'>
-          <div className='bg-orange-400 rounded-full px-3 py-8 ml-6'>
+      <div className='sm:h-screen'>
+        <div className='flex justify-between items-center py-4 px-4 '>
+          <div className='bg-orange-400 rounded-full px-3 py-8 ml-6 '>
             <h1 className='text-white text-lg font-extrabold'>Zoobalo</h1>
           </div>
-          <div className="flex space-x-20 text-orange-400 mr-12 mt-[-0.5rem]">
+          <div className="sm:flex space-x-20 text-orange-400 mr-12 mt-[-0.5rem] hidden">
             <a href="/" className="text-xl font-bold">Home</a>
             <a href="#about" className="text-xl font-bold">About Us</a>
             <a href="#contact" className="text-xl font-bold">Contact Us</a>
           </div>
         </div>
-        <div className="flex items-center justify-between">
-          <div className="ml-16">
+        <div className="flex flex-col sm:flex-row items-center justify-between">
+          <div className="sm:ml-16 mt-12 sm:w-[55%]">
             <div>
               <h1 className="text-xl text-orange-400 font-medium tracking-widest">OUR PRIORITY, YOURS SAFETY</h1>
               <h1 className="text-7xl font-extrabold text-orange-400">SAFE FOOD</h1>
-              <h1 className="text-[5rem] font-light text-orange-400 mt-[-1rem]">FAST DELIVERY</h1>
+              <h1 className="sm:text-[5rem] font-light text-orange-400 sm:mt-[-1rem] text-[3rem] mt-2">FAST DELIVERY</h1>
               <a href="#about">
                 <button className='px-5 py-3 rounded-2xl text-white bg-orange-500 mt-10 font-bold ml-2'>SEE MORE</button>
               </a>
             </div>
           </div>
-          <div className='w-[45%]'>
-            <img src={hero} className='bg-cover w-[80%] h-[80%] ml-8' alt="logo" />
+          <div className='sm:w-[45%] w-[100%] mt-8'>
+            <img src={hero} className='bg-contain w-[80%] h-[80%] sm:ml-8' alt="logo" />
           </div>
         </div>
       </div>
@@ -42,36 +42,36 @@ function App() {
       {/* Mid Section  */}
 
       <div className='flex py-16' id='about'>
-        <div className='w-[50%]'>
+        <div className='sm:w-[50%] hidden sm:flex'>
           <img src={tiffin} alt="tiffin-box" className='bg-contain w-[80%]' />
         </div>
-        <div className='w-[50%] ml-8 mt-12'>
+        <div className='sm:w-[50%] ml-8 mt-12 w-[100%]'>
           <h1 className='text-orange-400 text-3xl font-semibold'>What We Offer</h1>
           <h1 className='w-[70%] mt-5 font-medium text-slate-400'>Our motto is to feed every college going student delicious and nutritious food which others are not providing. We offer home made food at affordable rates.</h1>
           <ul className='mt-10 ml-4 flex-col space-y-7'>
-            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 text-2xl font-semibold'>Everyday new menu</h1></li>
-            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 text-2xl font-semibold'>Two days special food in a week</h1></li>
-            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 text-2xl font-semibold'>Fresh, Hygienic and Home made food</h1></li>
-            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 text-2xl font-semibold'>Get exciting rewards and offers</h1></li>
+            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 md:text-2xl font-semibold xs:w-[70%]'>Everyday new menu</h1></li>
+            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 md:text-2xl font-semibold xs:w-[70%]'>Two days special food in a week</h1></li>
+            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 md:text-2xl font-semibold xs:w-[70%]'>Fresh, Hygienic and Home made food</h1></li>
+            <li className='flex items-center space-x-5'><img src={tick} className='w-10 h-10' /><h1 className='text-gray-400 md:text-2xl font-semibold xs:w-[70%]'>Get exciting rewards and offers</h1></li>
           </ul>
         </div>
       </div>
 
       {/* Contact Section  */}
       <div className='bg-[#363636] w-full h-auto px-20 pt-24 pb-2' id='contact'>
-        <div className=' text-white flex'>
-          <div className='w-[60%]'>
+        <div className=' text-white flex flex-col sm:flex-row'>
+          <div className='sm:w-[60%] w-[100%]'>
             <h1 className='text-4xl font-bold'>
               ZOO<span className='text-4xl text-orange-400'>BALO</span>
             </h1>
-            <h1 className='w-[60%] text-5xl font-bold mt-16'>
+            <h1 className='sm:w-[60%] text-5xl font-bold mt-16 w-[100%] '>
               The Best you can get at an Affordable Price
             </h1>
             <div className='flex space-x-3 mt-16 text-2xl font-semibold text-[#787878]'>
               BRING OUT CHANGE
             </div>
           </div>
-          <div className='w-[40%] ml-24'>
+          <div className='sm:w-[40%] sm:ml-24 w-[100%] mt-12'>
             <div>
               <h1 className='text-2xl text-[#787878] font-extrabold'>CONTACTS</h1>
               <div className='flex space-x-3 mt-10'>
